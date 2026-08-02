@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tecno Mart — Premium Tecnology, Hyderabad</title>
+<meta name="description" content="Tecno Mart is Hyderabad's premium destination for new & refurbished laptops, smartphones, repairs, and accessories. Certified quality. Expert service.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/home.css">
+
+<!-- model-viewer for 3D GLB -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+<!-- ========== PRELOADER ========== -->
+<div id="preloader">
+  <div class="preloader-logo">Tecno<span>Mart</span></div>
+  <div class="preloader-bar"></div>
+</div>
+
+<!-- ========== SCROLL PROGRESS ========== -->
+<div id="scroll-progress"></div>
+
+<!-- ========== CURSOR ========== -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- ========== NAV ========== -->
+<header class="nav" id="nav">
+  <a href="index.html" class="nav-logo">Tecno<span class="dot">Mart</span></a>
+  <nav class="nav-links">
+    <a href="pages/laptops.html">Laptops</a>
+    <a href="pages/smartphones.html">Smartphones</a>
+    <a href="pages/services.html">Services</a>
+    <a href="pages/refurbished.html">Refurbished</a>
+    <a href="pages/accessories.html">Accessories</a>
+    <a href="pages/about.html">About</a>
+  </nav>
+  <div class="nav-actions">
+    <a href="pages/contact.html" class="btn btn-ghost" data-magnetic>Contact</a>
+    <a href="https://wa.me/919999999999" class="btn btn-primary" data-magnetic>
+      <span>WhatsApp Us</span>
+    </a>
+  </div>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" id="nav-toggle">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="pages/laptops.html">Laptops</a>
+  <a href="pages/smartphones.html">Smartphones</a>
+  <a href="pages/services.html">Services</a>
+  <a href="pages/refurbished.html">Refurbished</a>
+  <a href="pages/accessories.html">Accessories</a>
+  <a href="pages/about.html">About</a>
+  <a href="pages/contact.html">Contact</a>
+</div>
+
+<main>
+
+  <!-- ============ HERO — 3D MacBook Stage ============ -->
+  <section class="hero" id="hero">
+    <div class="grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="hero-content">
+      <span class="eyebrow hero-eyebrow" id="hero-eyebrow">Hyderabad · Premium Tecnology Retail &amp; Service</span>
+      <h1 class="display" id="hero-title">
+        <span class="line"><span class="word-wrap">Every device.</span></span>
+        <span class="line"><em class="accent-word">Every</em> <span class="word-wrap">possibility.</span></span>
+      </h1>
+      <p class="hero-sub" id="hero-sub">New and refurbished laptops, smartphones, repairs, and accessories — engineered around one standard: certified quality, honestly priced.</p>
+      <div class="hero-actions" id="hero-actions">
+        <a href="pages/laptops.html" class="btn btn-primary" data-magnetic>Explore Devices</a>
+        <a href="pages/services.html" class="btn btn-ghost" data-magnetic>Book a Repair</a>
+      </div>
+    </div>
+
+    <!-- MacBook 3D Model -->
+    <div class="hero-3d-stage" id="hero-3d-stage">
+      <model-viewer
+        class="hero-model"
+        src="MacBook_Assembly.glb"
+        alt="MacBook 3D model — premium laptop"
+        auto-rotate
+        auto-rotate-delay="500"
+        rotation-per-second="18deg"
+        camera-controls
+        interaction-prompt="none"
+        shadow-intensity="0"
+        exposure="0.9"
+        environment-image="neutral"
+        id="macbook-model"
+        camera-orbit="0deg 75deg 120%"
+        min-camera-orbit="auto auto 80%"
+        max-camera-orbit="auto auto 160%"
+        style="--poster-color: transparent;"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+      ></model-viewer>
+    </div>
+
+    <div class="hero-scroll-cue">
+      <span>Scroll</span>
+      <span class="stem"></span>
+    </div>
+  </section>
+
+  <!-- ============ TRUST MARQUEE ============ -->
+  <div class="marquee-strip" id="marquee-strip">
+    <div class="marquee-track" id="marquee-track">
+      <span>90-Day <b>Warranty</b> on All Refurbished Devices</span>
+      <span class="marquee-dot">·</span>
+      <span><b>Genuine Parts</b>, Every Repair</span>
+      <span class="marquee-dot">·</span>
+      <span>Same-Day <b>Diagnostics</b></span>
+      <span class="marquee-dot">·</span>
+      <span><b>1,200+</b> Devices Certified This Year</span>
+      <span class="marquee-dot">·</span>
+      <span>Hyderabad's Trusted <b>Local Tech Store</b></span>
+      <span class="marquee-dot">·</span>
+      <span>40-Point <b>Quality Check</b></span>
+      <span class="marquee-dot">·</span>
+      <span>Expert <b>Technicians</b></span>
+      <span class="marquee-dot">·</span>
+    </div>
+  </div>
+
+  <!-- ============ FEATURED CATEGORIES ============ -->
+  <section class="section" id="categories">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-index">fig. 01 — categories</span>
+          <h2 class="display" style="margin-top:0.5rem;">Everything technology,<br>under one roof.</h2>
+        </div>
+        <p class="desc">From flagship laptops to a five-minute cable fix — Tecno Mart is built around the full lifecycle of your devices.</p>
+      </div>
+
+      <div class="category-grid" id="cat-grid">
+        <a href="pages/laptops.html" class="category-card" data-cursor-hover data-tilt>
+          <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M2 19h20l-1.5-3h-17z"/></svg>
+          <svg class="cat-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          <div>
+            <h3>Laptops &amp; Desktops</h3>
+            <p>New, business, gaming, creator-grade</p>
+          </div>
+          <span class="category-card-num">01</span>
+        </a>
+
+        <a href="pages/smartphones.html" class="category-card" data-cursor-hover data-tilt>
+          <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="2" width="12" height="20" rx="2.5"/><line x1="10" y1="19" x2="14" y2="19"/></svg>
+          <svg class="cat-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          <div>
+            <h3>Smartphones</h3>
+            <p>Flagships to certified refurbished</p>
+          </div>
+          <span class="category-card-num">02</span>
+        </a>
+
+        <a href="pages/services.html" class="category-card" data-cursor-hover data-tilt>
+          <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14.7 6.3a4 4 0 015.7 5.3L12 20l-8.4-8.4a4 4 0 015.7-5.7L12 8.6l2.7-2.3z"/></svg>
+          <svg class="cat-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          <div>
+            <h3>Repairs &amp; Services</h3>
+            <p>Screens, batteries, boards, data</p>
+          </div>
+          <span class="category-card-num">03</span>
+        </a>
+
+        <a href="pages/refurbished.html" class="category-card" data-cursor-hover data-tilt>
+          <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+          <svg class="cat-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          <div>
+            <h3>Refurbished Devices</h3>
+            <p>Multi-point checked, warrantied</p>
+          </div>
+          <span class="category-card-num">04</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats-section" id="stats">
+    <div class="wrap">
+      <span class="section-index">fig. 02 — by the numbers</span>
+      <div class="stats-grid" data-reveal-stagger>
+        <div class="stat-item">
+          <span class="stat-num" data-count="1200" data-suffix="+">1200+</span>
+          <span class="stat-label">Devices Certified</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="98" data-suffix="%">98%</span>
+          <span class="stat-label">Pass Certification Rate</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="90" data-suffix=" days">90 days</span>
+          <span class="stat-label">Refurb Warranty</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="40" data-suffix="pt">40pt</span>
+          <span class="stat-label">Quality Checkpoint</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LAPTOP COLLECTION ============ -->
+  <section class="section" id="laptop-collection">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-index">fig. 03 — laptop collection</span>
+          <h2 class="display" style="margin-top:0.5rem;">Built for how you work.</h2>
+        </div>
+        <p class="desc">Gaming rigs, creator workstations, and everyday business machines — new and precision-refurbished.</p>
+      </div>
+    </div>
+
+    <div class="showcase-rail-wrap wrap">
+      <div class="showcase-rail" id="showcase-rail" data-reveal-stagger>
+
+        <div class="product-card card" data-cursor-hover data-tilt>
+          <div class="card-glow"></div>
+          <div class="stage">
+            <svg viewBox="0 0 200 140"><rect x="20" y="10" width="160" height="100" rx="8" fill="#141416" stroke="#2a2a2e"/><rect x="30" y="20" width="140" height="80" rx="3" fill="#0a0a0b"/><rect x="10" y="112" width="180" height="10" rx="3" fill="#1a1a1c" stroke="#2a2a2e"/><text x="100" y="68" text-anchor="middle" fill="#3a3a3e" font-size="11" font-family="monospace">RTX · 165Hz</text></svg>
+            <span class="product-spec-badge">RTX · 165Hz</span>
+          </div>
+          <div class="product-meta">
+            <div>
+              <span class="chip chip-accent">Gaming</span>
+              <h3 style="margin-top:0.6rem;">Vertex RX 15</h3>
+              <p class="cat">RTX-class · 16GB · 165Hz</p>
+            </div>
+            <span class="product-price">₹94,999</span>
+          </div>
+        </div>
+
+        <div class="product-card card" data-cursor-hover data-tilt>
+          <div class="card-glow"></div>
+          <div class="stage">
+            <svg viewBox="0 0 200 140"><rect x="20" y="10" width="160" height="100" rx="8" fill="#141416" stroke="#2a2a2e"/><rect x="30" y="20" width="140" height="80" rx="3" fill="#0a0a0b"/><rect x="10" y="112" width="180" height="10" rx="3" fill="#1a1a1c" stroke="#2a2a2e"/></svg>
+            <span class="product-spec-badge">i5 · FP</span>
+          </div>
+          <div class="product-meta">
+            <div>
+              <span class="chip">Business</span>
+              <h3 style="margin-top:0.6rem;">ProBook Slate 14</h3>
+              <p class="cat">i5 · 16GB · Fingerprint</p>
+            </div>
+            <span class="product-price">₹52,499</span>
+          </div>
+        </div>
+
+        <div class="product-card card" data-cursor-hover data-tilt>
+          <div class="card-glow"></div>
+          <div class="stage">
+            <svg viewBox="0 0 200 140"><rect x="20" y="10" width="160" height="100" rx="8" fill="#141416" stroke="#2a2a2e"/><rect x="30" y="20" width="140" height="80" rx="3" fill="#0a0a0b"/><rect x="10" y="112" width="180" height="10" rx="3" fill="#1a1a1c" stroke="#2a2a2e"/></svg>
+            <span class="product-spec-badge">OLED</span>
+          </div>
+          <div class="product-meta">
+            <div>
+              <span class="chip">Creator</span>
+              <h3 style="margin-top:0.6rem;">StudioBook Pro X</h3>
+              <p class="cat">OLED · 32GB · Color-true</p>
+            </div>
+            <span class="product-price">₹1,38,000</span>
+          </div>
+        </div>
+
+        <div class="product-card card" data-cursor-hover data-tilt>
+          <div class="card-glow"></div>
+          <div class="stage">
+            <svg viewBox="0 0 200 140"><rect x="20" y="10" width="160" height="100" rx="8" fill="#141416" stroke="#2a2a2e"/><rect x="30" y="20" width="140" height="80" rx="3" fill="#0a0a0b"/><rect x="10" y="112" width="180" height="10" rx="3" fill="#1a1a1c" stroke="#2a2a2e"/></svg>
+            <span class="product-spec-badge">8GB</span>
+          </div>
+          <div class="product-meta">
+            <div>
+              <span class="chip">Student</span>
+              <h3 style="margin-top:0.6rem;">Everyday Air 13</h3>
+              <p class="cat">Lightweight · 8GB · Long battery</p>
+            </div>
+            <span class="product-price">₹36,999</span>
+          </div>
+        </div>
+
+        <div class="product-card card" data-cursor-hover data-tilt>
+          <div class="card-glow"></div>
+          <div class="stage">
+            <svg viewBox="0 0 200 140"><rect x="20" y="10" width="160" height="100" rx="8" fill="#141416" stroke="#2a2a2e"/><rect x="30" y="20" width="140" height="80" rx="3" fill="#0a0a0b"/><rect x="10" y="112" width="180" height="10" rx="3" fill="#1a1a1c" stroke="#2a2a2e"/></svg>
+            <span class="product-spec-badge">Grade A</span>
+          </div>
+          <div class="product-meta">
+            <div>
+              <span class="chip chip-accent">Refurbished</span>
+              <h3 style="margin-top:0.6rem;">Certified ThinkPad T14</h3>
+              <p class="cat">i7 · Grade A · 90-day warranty</p>
+            </div>
+            <span class="product-price">₹28,499</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="wrap rail-controls">
+      <button class="rail-btn" data-rail-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="rail-btn" data-rail-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </section>
+
+  <!-- ============ PHONE 3D SHOWCASE ============ -->
+  <section class="section phone-showcase" id="smartphone-showcase" style="padding-inline:0;">
+    <div class="phone-showcase-content" data-reveal>
+      <span class="section-index">fig. 04 — smartphone collection</span>
+      <h2 class="display" style="margin-top:0.5rem;">Flagship to<br>first phone.</h2>
+      <p>New, display units, and certified used — each tested across battery, display, and camera before it reaches you.</p>
+
+      <div class="phone-spec-list">
+        <div class="phone-spec">
+          <span class="phone-spec-num">01</span>
+          <div>
+            <h4>Flagship Models</h4>
+            <p class="cat">Latest silicon, pro cameras, day-one</p>
+          </div>
+        </div>
+        <div class="phone-spec">
+          <span class="phone-spec-num">02</span>
+          <div>
+            <h4>Mid-Range Performers</h4>
+            <p class="cat">Balanced everyday excellence</p>
+          </div>
+        </div>
+        <div class="phone-spec">
+          <span class="phone-spec-num">03</span>
+          <div>
+            <h4>Certified Refurbished</h4>
+            <p class="cat">Tested, warrantied, honestly graded</p>
+          </div>
+        </div>
+        <div class="phone-spec">
+          <span class="phone-spec-num">04</span>
+          <div>
+            <h4>Display Units</h4>
+            <p class="cat">Deep discounts, fully tested</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:var(--space-sm);flex-wrap:wrap;">
+        <a href="pages/smartphones.html" class="btn btn-primary" data-magnetic>View Smartphones</a>
+        <a href="pages/refurbished.html" class="btn btn-ghost" data-magnetic>See Refurbished</a>
+      </div>
+    </div>
+
+    <!-- iPhone 3D Model -->
+    <div class="phone-3d-stage" id="phone-3d-stage">
+      <model-viewer
+        class="phone-model"
+        src="iPhone_Assembly.glb"
+        alt="iPhone 3D model — premium smartphone"
+        auto-rotate
+        auto-rotate-delay="800"
+        rotation-per-second="20deg"
+        camera-controls
+        interaction-prompt="none"
+        shadow-intensity="0"
+        exposure="1.0"
+        environment-image="neutral"
+        id="iphone-model"
+        camera-orbit="10deg 80deg 120%"
+        min-camera-orbit="auto auto 80%"
+        max-camera-orbit="auto auto 150%"
+        style="--poster-color: transparent;"
+      ></model-viewer>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-index">fig. 05 — repair &amp; services</span>
+          <h2 class="display" style="margin-top:0.5rem;">Fixed properly.<br>Fixed fast.</h2>
+        </div>
+        <p class="desc">Every repair uses genuine or OEM-grade parts, backed by a written service warranty.</p>
+      </div>
+
+      <div class="services-timeline" data-reveal-stagger>
+        <div class="service-item"><span class="idx">01</span><div><h4>Screen Replacement</h4><p>Laptop &amp; mobile, same-day in most cases</p></div></div>
+        <div class="service-item"><span class="idx">02</span><div><h4>Battery Replacement</h4><p>Health-tested, genuine cells</p></div></div>
+        <div class="service-item"><span class="idx">03</span><div><h4>Motherboard Repair</h4><p>Chip-level diagnostics &amp; repair</p></div></div>
+        <div class="service-item"><span class="idx">04</span><div><h4>SSD / RAM Upgrade</h4><p>Instant performance uplift</p></div></div>
+        <div class="service-item"><span class="idx">05</span><div><h4>Data Recovery</h4><p>Drives, corrupted disks, deleted files</p></div></div>
+        <div class="service-item"><span class="idx">06</span><div><h4>Software &amp; OS Setup</h4><p>Installation, licensing, troubleshooting</p></div></div>
+        <div class="service-item"><span class="idx">07</span><div><h4>Virus &amp; Malware Removal</h4><p>Full system clean &amp; hardening</p></div></div>
+        <div class="service-item"><span class="idx">08</span><div><h4>Thermal Paste &amp; Cleaning</h4><p>Cooling restored, throttling fixed</p></div></div>
+      </div>
+
+      <div style="text-align:center;margin-top:var(--space-xl);">
+        <a href="pages/services.html" class="btn btn-primary" data-magnetic>View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REFURBISHED TRUST ============ -->
+  <section class="section" id="refurbished">
+    <div class="wrap">
+      <span class="section-index">fig. 06 — refurbished devices</span>
+      <div class="refurb-layout" style="margin-top:2.5rem;">
+        <div class="refurb-checks" data-reveal-stagger>
+          <div class="refurb-check">
+            <span class="num">01</span>
+            <div><h4>40-Point Quality Check</h4><p>Every device tested across hardware, display, ports, and battery.</p></div>
+          </div>
+          <div class="refurb-check">
+            <span class="num">02</span>
+            <div><h4>Battery Health Verified</h4><p>Minimum 85% health guaranteed, disclosed upfront.</p></div>
+          </div>
+          <div class="refurb-check">
+            <span class="num">03</span>
+            <div><h4>90-Day Warranty</h4><p>Written coverage on parts and labor, no fine print.</p></div>
+          </div>
+          <div class="refurb-check">
+            <span class="num">04</span>
+            <div><h4>Certified Grading</h4><p>Transparent cosmetic grading — you know exactly what you're buying.</p></div>
+          </div>
+        </div>
+
+        <div class="refurb-visual" data-reveal>
+          <div class="ring r1"></div>
+          <div class="ring r2"></div>
+          <div class="ring r3"></div>
+          <div class="refurb-badge">
+            <div class="pct" id="refurb-pct">0%</div>
+            <div class="label">Pass Certification</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACCESSORIES WALL ============ -->
+  <section class="section" id="accessories">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-index">fig. 07 — accessories</span>
+          <h2 class="display" style="margin-top:0.5rem;">The parts that complete it.</h2>
+        </div>
+        <p class="desc">Chargers, drives, gaming gear, and everything in between — genuine, in stock, ready today.</p>
+      </div>
+
+      <div class="wall-grid" data-reveal-stagger>
+        <div class="wall-item span-2">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="18" y="10" width="24" height="40" rx="10"/><circle cx="30" cy="42" r="2" fill="currentColor"/></svg>
+          <span class="wall-label">Headphones</span>
+        </div>
+        <div class="wall-item">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="20" y="14" width="8" height="14" rx="4"/><rect x="32" y="14" width="8" height="14" rx="4"/><rect x="16" y="30" width="28" height="12" rx="6"/></svg>
+          <span class="wall-label">Earbuds</span>
+        </div>
+        <div class="wall-item">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="14" y="20" width="32" height="20" rx="3"/><path d="M46 26h4v8h-4z"/></svg>
+          <span class="wall-label">Chargers</span>
+        </div>
+        <div class="wall-item span-2-row">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="16" y="8" width="28" height="44" rx="6"/><line x1="24" y1="18" x2="36" y2="18"/><line x1="24" y1="26" x2="36" y2="26"/></svg>
+          <span class="wall-label">Power Banks</span>
+        </div>
+        <div class="wall-item">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="16" y="24" width="28" height="12" rx="2"/></svg>
+          <span class="wall-label">SSDs</span>
+        </div>
+        <div class="wall-item">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="14" y="26" width="10" height="8"/><rect x="26" y="26" width="10" height="8"/><rect x="38" y="26" width="8" height="8"/></svg>
+          <span class="wall-label">RAM</span>
+        </div>
+        <div class="wall-item">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><ellipse cx="30" cy="30" rx="12" ry="8"/></svg>
+          <span class="wall-label">Mouse</span>
+        </div>
+        <div class="wall-item span-2">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="10" y="24" width="40" height="14" rx="3"/></svg>
+          <span class="wall-label">Keyboards</span>
+        </div>
+        <div class="wall-item">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="16" y="16" width="28" height="20" rx="2"/><path d="M24 36v6M36 36v6"/></svg>
+          <span class="wall-label">Monitors</span>
+        </div>
+        <div class="wall-item">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="20" y="12" width="20" height="34" rx="4"/></svg>
+          <span class="wall-label">Speakers</span>
+        </div>
+        <div class="wall-item">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M14 30h32M40 24l6 6-6 6"/></svg>
+          <span class="wall-label">Cables</span>
+        </div>
+        <div class="wall-item">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="18" y="20" width="24" height="20" rx="4"/></svg>
+          <span class="wall-label">Adapters</span>
+        </div>
+        <div class="wall-item span-2">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="12" y="20" width="36" height="20" rx="3"/><circle cx="30" cy="30" r="5"/></svg>
+          <span class="wall-label">Cooling Pads</span>
+        </div>
+        <div class="wall-item">
+          <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="14" y="18" width="32" height="26" rx="4"/></svg>
+          <span class="wall-label">Laptop Bags</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE ============ -->
+  <section class="section" id="why-us">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-index">fig. 08 — why techno mart</span>
+          <h2 class="display" style="margin-top:0.5rem;">Trust, built device by device.</h2>
+        </div>
+      </div>
+
+      <div class="why-grid" data-reveal-stagger>
+        <div class="why-card card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>
+          <h4>Genuine Products</h4>
+          <p>Sourced only from authorized channels and vetted resellers.</p>
+        </div>
+        <div class="why-card card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+          <h4>Expert Technicians</h4>
+          <p>Years of hands-on repair experience across every major brand.</p>
+        </div>
+        <div class="why-card card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M13 2L4 14h7l-1 8 10-13h-7z"/></svg>
+          <h4>Fast Turnaround</h4>
+          <p>Most repairs completed same-day, no unnecessary waiting.</p>
+        </div>
+        <div class="why-card card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 018 0v2"/></svg>
+          <h4>Warranty Support</h4>
+          <p>Every purchase and repair backed by clear written coverage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BRANDS ============ -->
+  <section class="section" id="brands">
+    <div class="wrap">
+      <span class="section-index">fig. 09 — brands we carry</span>
+      <div class="brand-grid" style="margin-top:2.5rem;" data-reveal-stagger>
+        <div class="brand-cell">Apple</div>
+        <div class="brand-cell">Dell</div>
+        <div class="brand-cell">HP</div>
+        <div class="brand-cell">Lenovo</div>
+        <div class="brand-cell">ASUS</div>
+        <div class="brand-cell">Acer</div>
+        <div class="brand-cell">MSI</div>
+        <div class="brand-cell">Samsung</div>
+        <div class="brand-cell">Xiaomi</div>
+        <div class="brand-cell">OnePlus</div>
+        <div class="brand-cell">Vivo</div>
+        <div class="brand-cell">Oppo</div>
+        <div class="brand-cell">Realme</div>
+        <div class="brand-cell">Logitech</div>
+        <div class="brand-cell">JBL</div>
+        <div class="brand-cell">Sony</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section" id="testimonials">
+    <div class="wrap">
+      <span class="section-index" style="display:block;text-align:center;margin-bottom:2.5rem;">fig. 10 — testimonials</span>
+      <div class="testimonial-wrap">
+        <div class="testimonial-slide is-active">
+          <blockquote>"Brought in a laptop with a dead motherboard — most places quoted a replacement. Tecno Mart repaired it for a fraction of the cost."</blockquote>
+          <div class="testimonial-meta">Arjun Reddy — Gachibowli, Hyderabad</div>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>"Bought a refurbished ThinkPad here — genuinely looks and performs like new. The battery health disclosure upfront won me over."</blockquote>
+          <div class="testimonial-meta">Meera Iyer — Kondapur, Hyderabad</div>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>"Screen replacement on my phone took under an hour. Transparent pricing, no upselling — rare to find these days."</blockquote>
+          <div class="testimonial-meta">Farhan Ali — Madhapur, Hyderabad</div>
+        </div>
+        <div class="testimonial-dots">
+          <span class="t-dot is-active"></span>
+          <span class="t-dot"></span>
+          <span class="t-dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head" style="justify-content:center;text-align:center;">
+        <div>
+          <span class="section-index">fig. 11 — faqs</span>
+          <h2 class="display" style="margin-top:0.5rem;">Common questions.</h2>
+        </div>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">What warranty comes with refurbished devices?<span class="plus"></span></button>
+          <div class="faq-a"><p>Every refurbished laptop and smartphone comes with a minimum 90-day warranty covering parts and labor, along with a disclosed battery health rating.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How long do repairs typically take?<span class="plus"></span></button>
+          <div class="faq-a"><p>Most screen, battery, and software repairs are completed same-day. Motherboard-level repairs or parts on order may take 2–4 business days.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you offer data recovery for damaged drives?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes — we handle recovery for corrupted, formatted, or physically damaged drives, with a free diagnostic to assess recoverability before you commit.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I trade in my old device?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes, we accept trade-ins on laptops and smartphones toward new or refurbished purchases, based on a quick in-store evaluation.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you provide on-site or pickup service?<span class="plus"></span></button>
+          <div class="faq-a"><p>For bulk or business clients in Hyderabad, we offer pickup and drop-off scheduling — reach out via WhatsApp to arrange it.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <span class="section-index">fig. 12 — visit or reach us</span>
+      <div class="contact-layout" style="margin-top:2.5rem;">
+        <div class="contact-info" data-reveal-stagger>
+          <div class="contact-row">
+            <span class="mono-label">Location</span>
+            <div class="value small">Hyderabad, Telangana, India</div>
+          </div>
+          <div class="contact-row">
+            <span class="mono-label">Phone</span>
+            <div class="value">+91 99999 99999</div>
+          </div>
+          <div class="contact-row">
+            <span class="mono-label">WhatsApp</span>
+            <div class="value">+91 99999 99999</div>
+          </div>
+          <div class="contact-row">
+            <span class="mono-label">Email</span>
+            <div class="value small">hello@tecnomart.in</div>
+          </div>
+          <div class="contact-row">
+            <span class="mono-label">Business Hours</span>
+            <div class="value small">Mon – Sat, 10:00 AM – 8:30 PM</div>
+          </div>
+          <a href="https://wa.me/919999999999" class="btn btn-primary" data-magnetic style="align-self:flex-start;">Message on WhatsApp</a>
+        </div>
+        <div class="map-frame" data-reveal>
+          <iframe src="https://www.google.com/maps?q=Hyderabad,Telangana&output=embed" loading="lazy" title="Tecno Mart location map"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta">
+    <div class="wrap">
+      <span class="eyebrow" style="justify-content:center;">Ready when you are</span>
+      <h2 class="display" data-split>Let's get your tech sorted.</h2>
+      <div class="hero-actions">
+        <a href="pages/contact.html" class="btn btn-primary" data-magnetic>Get In Touch</a>
+        <a href="pages/services.html" class="btn btn-ghost" data-magnetic>Book a Repair</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">Tecno<span class="dot">Mart</span></div>
+        <p>Premium technology retail and service, based in Hyderabad. New, refurbished, and repaired — done right.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="pages/laptops.html">Laptops</a></li>
+          <li><a href="pages/smartphones.html">Smartphones</a></li>
+          <li><a href="pages/accessories.html">Accessories</a></li>
+          <li><a href="pages/refurbished.html">Refurbished</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="pages/services.html">Laptop Repair</a></li>
+          <li><a href="pages/services.html">Mobile Repair</a></li>
+          <li><a href="pages/services.html">Data Recovery</a></li>
+          <li><a href="pages/services.html">Upgrades</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/brands.html">Brands</a></li>
+          <li><a href="pages/faqs.html">FAQs</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Hyderabad, Telangana</li>
+          <li>+91 99999 99999</li>
+          <li>hello@tecnomart.in</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="mono-label">© 2026 Tecno Mart. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/hero.js"></script>
+</body>
+</html>

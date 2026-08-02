@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecno Mart Design System Reference</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* Backgrounds */
+      --bg-primary: #05070A;
+      --bg-secondary: #0B1018;
+      --bg-card: #111827;
+      --bg-elevated: #182235;
+
+      /* Text */
+      --text-primary: #F8FAFC;
+      --text-secondary: #B7C2D3;
+      --text-muted: #738196;
+      --text-disabled: #4B5563;
+
+      /* Accents */
+      --accent-primary: #3B82F6;
+      --accent-hover: #60A5FA;
+      --accent-pressed: #2563EB;
+      --accent-glow: rgba(59,130,246,0.18);
+
+      /* Borders */
+      --border-default: #273244;
+      --border-hover: #3B82F6;
+      --border-glass: rgba(255,255,255,0.08);
+
+      /* Status */
+      --status-success: #22C55E;
+      --status-warning: #F59E0B;
+      --status-error: #EF4444;
+
+      /* Fonts */
+      --font-heading: 'Sora', sans-serif;
+      --font-body: 'Inter', sans-serif;
+
+      /* Radii */
+      --radius-btn: 14px;
+      --radius-card: 22px;
+      --radius-input: 14px;
+      --radius-panel: 28px;
+
+      /* Shadows */
+      --shadow-standard: 0 12px 40px rgba(0,0,0,.45);
+      --shadow-blue: 0 0 35px rgba(59,130,246,.18);
+      --shadow-hover: 0 0 50px rgba(59,130,246,.25);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      padding: 40px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    h2 { margin-top: 60px; margin-bottom: 20px; font-size: 2rem; color: var(--text-secondary); border-bottom: 1px solid var(--border-default); padding-bottom: 10px; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px; }
+    
+    .color-swatch {
+      height: 100px;
+      border-radius: var(--radius-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 15px;
+      font-size: 0.85rem;
+      border: 1px solid var(--border-default);
+    }
+    
+    .color-swatch span {
+      background: rgba(0,0,0,0.5);
+      padding: 4px 8px;
+      border-radius: 8px;
+      width: fit-content;
+      font-family: monospace;
+    }
+
+    /* Gradients */
+    .hero-gradient { background: linear-gradient(to bottom, #05070A, #0B1018, #111827); height: 150px; border-radius: var(--radius-panel); border: 1px solid var(--border-default); }
+    .blue-glow-gradient { background: linear-gradient(to bottom, #3B82F6, #2563EB); height: 150px; border-radius: var(--radius-card); border: 1px solid var(--border-hover); box-shadow: var(--shadow-blue); }
+
+    /* Glass Effect */
+    .glass-panel {
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-panel);
+      padding: 40px;
+      box-shadow: var(--shadow-standard);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Buttons */
+    .btn-group { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+    
+    button {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 12px 24px;
+      border-radius: var(--radius-btn);
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+    }
+
+    .btn-primary {
+      background: var(--accent-primary);
+      color: #FFF;
+      border: none;
+      box-shadow: 0 0 25px rgba(59,130,246,0.25);
+    }
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid var(--border-default);
+    }
+    .btn-secondary:hover {
+      border-color: var(--border-hover);
+      background: rgba(255,255,255,0.03);
+      transform: translateY(-2px);
+    }
+
+    /* Typography scale */
+    .type-scale h1 { font-size: 4rem; margin-bottom: 10px; }
+    .type-scale h2 { font-size: 3rem; margin-top: 0; border: none; padding: 0; color: var(--text-primary); }
+    .type-scale h3 { font-size: 2rem; margin-bottom: 10px; }
+    .type-scale p { font-size: 1.125rem; color: var(--text-secondary); margin-bottom: 10px; }
+    .type-scale .muted { color: var(--text-muted); }
+
+  </style>
+</head>
+<body>
+
+  <h1>Tecno Mart Design System</h1>
+  <p style="color: var(--text-muted); font-size: 1.2rem; margin-bottom: 40px;">Soft UI × Glassmorphism × Apple cleanliness × Futuristic tech</p>
+
+  <h2>Colors: Backgrounds & Cards</h2>
+  <div class="grid">
+    <div class="color-swatch" style="background: var(--bg-primary);"><span>Primary (#05070A)</span></div>
+    <div class="color-swatch" style="background: var(--bg-secondary);"><span>Secondary (#0B1018)</span></div>
+    <div class="color-swatch" style="background: var(--bg-card);"><span>Card (#111827)</span></div>
+    <div class="color-swatch" style="background: var(--bg-elevated);"><span>Elevated (#182235)</span></div>
+  </div>
+
+  <h2>Colors: Accents</h2>
+  <div class="grid">
+    <div class="color-swatch" style="background: var(--accent-primary); border-color: transparent;"><span>Accent Primary</span></div>
+    <div class="color-swatch" style="background: var(--accent-hover); border-color: transparent;"><span>Accent Hover</span></div>
+    <div class="color-swatch" style="background: var(--accent-pressed); border-color: transparent;"><span>Accent Pressed</span></div>
+  </div>
+
+  <h2>Gradients & Shadows</h2>
+  <div class="grid">
+    <div>
+      <div class="hero-gradient"></div>
+      <p style="margin-top: 10px; font-family: monospace; color: var(--text-muted);">Hero Gradient</p>
+    </div>
+    <div>
+      <div class="blue-glow-gradient"></div>
+      <p style="margin-top: 10px; font-family: monospace; color: var(--text-muted);">Blue Glow (Buttons/Icons)</p>
+    </div>
+  </div>
+
+  <h2>Glassmorphism & Floating Panels</h2>
+  <div style="background: url('https://picsum.photos/1200/400') center/cover; padding: 60px; border-radius: var(--radius-panel); position: relative;">
+    <div style="position: absolute; inset: 0; background: var(--bg-primary); opacity: 0.6; border-radius: var(--radius-panel);"></div>
+    <div class="glass-panel">
+      <h3>Glass Panel Component</h3>
+      <p style="color: var(--text-secondary); margin-top: 10px; margin-bottom: 20px;">Using rgba(255,255,255,0.03) with 20px blur and 0.08 opacity border.</p>
+      
+      <div class="btn-group">
+        <button class="btn-primary">Primary Action</button>
+        <button class="btn-secondary">Secondary Action</button>
+      </div>
+    </div>
+  </div>
+
+  <h2>Typography (Sora & Inter)</h2>
+  <div class="type-scale glass-panel" style="background: var(--bg-secondary);">
+    <h1>Heading 1 (Sora)</h1>
+    <h2>Heading 2 (Sora)</h2>
+    <h3>Heading 3 (Sora)</h3>
+    <p>Body Text Primary (Inter) - This is one of the cleanest combinations for a futuristic UI. Sora has a geometric, modern feel while Inter keeps everything readable.</p>
+    <p class="muted">Body Text Muted (Inter) - Secondary information is displayed in this muted gray color.</p>
+  </div>
+
+</body>
+</html>

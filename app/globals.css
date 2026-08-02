@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './css/tokens.css';
+@import './css/base.css';
+@import './css/components.css';
+@import './css/home.css';
+
+/* Remove default Next.js global body styling to prevent conflicts with base.css */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
